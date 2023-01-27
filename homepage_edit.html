@@ -54,9 +54,11 @@
 	</section>
 	<section id="portfolio">
         <div class="modifier1">
-		  <h2>Mes Projets</h2>
-          <img src="./assets/icons/Group.png" alt="Edit" class="icone3">
-          <a href="#modal1" class="js-modal" id="btn-modal1" role="button" aria-haspopup="dialog" aria-controls="dialog">modifier</a>
+		      <h2>Mes Projets</h2>
+          <div class="editModal">
+            <i class="fa-regular fa-pen-to-square icone3"></i>
+            <a href="#modal1" class="js-modal" id="btn-modal1" role="button" aria-haspopup="dialog" aria-controls="dialog">modifier</a>
+          </div>
           <aside id="modal1" class="modal" aria-hidden="true" role="dialog" aria-labelledby="titlemodal" style="display: none;">
             <div class="modal-wrapper js-modal-stop">
                 <button type="button" class="js-modal-close" id="btn-close1" aria-label="Fermer" title="Fermer cette fenêtre modale" data-dismiss="dialog">X
@@ -65,9 +67,7 @@
                 <div class="gallery-modal">
                 </div> 
                 <div class="btn-list">               
-                 
                  <a href="#modal2" id="btn-modal2" class=" add-btn" role="button" aria-haspopup="dialog" aria-controls="dialog">Ajouter une photo</a>
-                  
                  <button class="remove-btn">Supprimer la galerie</button>
                 </div>
             </div>

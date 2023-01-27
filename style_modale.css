@@ -178,7 +178,14 @@ li:hover {
 }
 #portfolio .modifier1{
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 92px;
+}
+a{
+    text-decoration: none;
+    color:  #000000;
+}
+.editModal{
+   line-height: 2.5;
 }
 .gallery {
 	width: 100%;
