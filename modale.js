@@ -123,6 +123,7 @@ fetch("http://localhost:5678/api/works")
                    if (index=data[i].id) {
                      data.splice(index,1)
                    }
+                   location.reload();
             })
         }
     })
