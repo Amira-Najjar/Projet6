@@ -15,6 +15,7 @@ fetch("http://localhost:5678/api/works")
             figcaption.innerHTML=data[i].title;
             figure.appendChild(figcaption);
             gallery.appendChild(figure) 
+            projects.push(data);
         } 
     })
 //Bouton logout
