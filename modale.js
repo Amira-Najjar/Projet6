@@ -25,7 +25,7 @@ viewProjects()
 const logoutButton = document.querySelector(".logoutButton")
 logoutButton.addEventListener('click', () => {
         localStorage.clear();
-        window.location = 'index.html'
+      //  window.location = 'index.html'
         location.reload();
 })
 //Gestion de l'affichage du modale
