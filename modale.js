@@ -26,7 +26,7 @@ const logoutButton = document.querySelector(".logoutButton")
 logoutButton.addEventListener('click', () => {
         localStorage.clear();
         window.location = 'index.html'
-       // location.reload();
+        location.reload();
 })
 //Gestion de l'affichage du modale
 let modal=null
@@ -215,6 +215,7 @@ form.addEventListener("submit",async(e)=>{
             projects.push(value);
         })
          .then(() => {
+            location.reload();
             viewProjects();
         })
         .catch((error) => {
