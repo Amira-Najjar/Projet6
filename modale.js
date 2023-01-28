@@ -1,6 +1,7 @@
 const projects = [];
 let token = localStorage.getItem('token');
 //Affichage des projets dans la page
+function viewProjects(){
 fetch("http://localhost:5678/api/works")
     .then(response => response.json())
     .then(data => {
@@ -18,6 +19,8 @@ fetch("http://localhost:5678/api/works")
             projects.push(data);
         } 
     })
+}
+viewProjects()
 //Bouton logout
 const logoutButton = document.querySelector(".logoutButton")
 logoutButton.addEventListener('click', () => {
@@ -210,6 +213,9 @@ form.addEventListener("submit",async(e)=>{
         .then((value) => {
             console.log(value);
             projects.push(value);
+        })
+         .then(() => {
+            viewProjects();
         })
         .catch((error) => {
             console.error('There has been a problem with your fetch operation:', error);
